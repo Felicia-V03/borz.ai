@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,100&family=Libre+Barcode+128&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+/*-----root-----*/
+:root {
+    /*---root for text font---*/
+    --text-font1: 'Sansita', 'sefir';
+    --text-font2: 'Fira Sans', 'sefir';
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    
+    display: grid;
+    place-items: center;
+}
+
+.wrapper {
+    width: 62.5rem;
+    height: 100vh;
+    background-color: beige;
+}
+
+.head-section {
+    background-image: url('https://static-cdn.sr.se/images/406/43e5b77d-9369-46ce-a185-f74653cc5744.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 3rem 3rem 0rem 3rem;
+
+
+    .head-section__wrapper {
+        padding-bottom: 15rem;
+        display: flex;
+        flex-direction: row;    
+        justify-content: space-between;
+    }
+
+    .head-section__image {
+        width: 25%;
+        height: 10%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .head-menu__navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: .5rem;
+
+        .head-menu__text {
+            padding: 1rem;
+            color: #FAFAFA;
+            text-decoration: none;
+            text-align: center;
+            font-family: var(--text-font2);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .head-menu__text:hover{
+            background-color: #0101014c;
+        }
+
+        .head-menu__hamburger-button {
+            display: none;
+        }
+    }
+
+    .head-search__navigation {
+        background-color: aquamarine;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "label-arrive label-arrive label-leave label-leave label-adult label-child button-bok"
+        "input-arrive input-arrive input-leave input-leave input-adult input-child button-bok";
+        gap: 1rem;
+
+        .head-search__label-arrive {
+            grid-area: label-arrive;
+        }
+
+        .head-search__input-arrive {
+            grid-area: input-arrive;
+        }
+
+        .head-search__label-leave {
+            grid-area: label-leave;
+        }
+
+        .head-search__input-leave {
+            grid-area: input-leave;
+        }
+
+        .head-search__label-adult {
+            grid-area: label-adult;
+        }
+
+        .head-search__input-adult {
+            grid-area: input-adult;
+        }
+
+        .head-search__label-child {
+            grid-area: label-child;
+        }
+
+        .head-search__input-child {
+            grid-area: input-child;
+        }
+
+        .head-search__button-bok {
+            grid-area: button-bok;
+
+            padding: 1rem;
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 576px) {
+    
+}
