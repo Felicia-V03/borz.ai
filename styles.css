@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,100&family=Libre+Barcode+128&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 /*-----root-----*/
 :root {
     /*---root for text font---*/
-    --text-font1: 'Sansita', 'sefir';
-    --text-font2: 'Fira Sans', 'sefir';
+    --text-font-open: 'Open Sans', 'sefir';
+    --text-font-noto: 'Noto Sans', 'sefir';
 }
 
 * {
@@ -64,7 +63,6 @@ body {
     color: #FAFAFA;
     text-decoration: none;
     text-align: center;
-    font-family: var(--text-font2);
     font-size: 1rem;
     font-weight: 500;
 }
@@ -77,6 +75,7 @@ body {
     display: none;
 }
 
+/*SEARCH NAVIGATION*/
 .head-search__navigation {
     background-color: aquamarine;
     padding: 1rem;
@@ -133,41 +132,75 @@ body {
 
 .main-welcome__section {
     display: flex;
+    margin-bottom: 5rem;
 }
 
 .main-welcome__image-box {
     width: 50%;
 }
 
-.main-welcome__image-day {
+.main-welcome__image {
     aspect-ratio: 5 / 4;
     width: 100%;
 }
 
-.main-welcome__text-box {
+.main-section__text-box {
     width: 50%;
     padding: 2rem;
 
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
 }
 
-.main-welcome__title {
+.main-section__title {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    align-self: flex-start;
 }
 
-.main-welcome__subtitle {
+.main-section__subtitle {
     font-size: 1rem;
-    margin-bottom: 4rem;
+    margin-left: 2rem;
 }
 
-.main-welcome__button {
+/*-----GALLERY SECTION-----*/
+
+/*BUTTON IN GALLERY (TO MOVE IT TO CENTER)*/
+.main-gallery__section .main-section__button {
+    display: flex;
+    justify-content: center;
+}
+
+.main-gallery__section .main-section__subtitle {
+    margin-top: 2rem;
+}
+
+.main-gallery__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-gallery__image {
+    width: 48%;
+}
+
+/*-----BUTTON FOR EVERY SECTION-----*/
+.every-section__button {
     width: 10rem;
     padding: 1rem;
-    align-self: flex-end;
     border: none;
+    border-radius: 1rem;
+    text-decoration: none;
 }
+
+/*-----ASIDE SECTION-----*/
+
 
 @media (min-width: 375px) and (max-width: 576px) {
     
