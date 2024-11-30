@@ -32,7 +32,8 @@ body {
 }
 
 .wrapper {
-    width: 62.5rem;
+    min-width: 756px;
+    max-width: 1000px;
     height: auto;
     background-color: white;
 }
@@ -78,11 +79,14 @@ body {
     gap: .5rem;
 }
 
+.head-menu__list {
+    text-decoration: none;
+}
+
 /*TEXT IN MENU*/
 .head-menu__text--light-white {
     padding: 1rem;
     color: var(--color-light-white);
-    text-decoration: none;
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
