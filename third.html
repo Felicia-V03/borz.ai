@@ -10,7 +10,7 @@
     <div class="wrapper">
         <header class="head-section">
             <section class="head-section__wrapper">
-                <a href="index.html" class="head-section__logo">
+                <a href="index.html" class="head-section__container">
                     <img src="assets/logo/bonz.ai-logo-white-landscape.png" alt="Borz.ai logo" class="head-section__image">
                 </a>
                 
@@ -30,73 +30,101 @@
                     <img class="head-section__button--hamburger" src="assets/logo/icons8-menu.svg" alt="Hamburger button for menu for mobile-form">
                 </nav>
             </section>
+
+            <form class="head-section__form">
+                <label for="head-section__input--first" class="head-section__label head-section__label--first">Checka in:</label>
+                <input type="date" class="head-section__input head-section__input--first">
+
+                <label for="head-section__input--second" class="head-section__label head-section__label--second">Checka ut:</label>
+                <input type="date" class="head-section__input head-section__input--second">
+
+                <label for="head-section__input--third" class="head-section__label head-section__label--third">Adults:</label>
+                <input type="number" class="head-section__input head-section__input--third" value="1">
+
+                <label for="head-section__input--fourth" class="head-section__label head-section__label--fourth">Chilldren:</label>
+                <input type="number" class="head-section__input head-section__input--fourth" value="0">
+
+                <a href="third.html" class="head-section__button--box">
+                    <button class="head-section__button head-section__button--sok">SÖK</button>
+                </a>
+            </form>
         </header>
 
-        <main class="main-section">
-            <section class="main-section__container">
-                <article class="main-section__box--center">
-                    <h2 class="main-section__title">Välkommen till boiz.ai</h2>
-                    <p class="main-section__subtitle">Lorem ipsum, dolor sit amet consectetur 
-                        adipisicing elit. Error impedit hic doloremque consectetur, 
-                        earum nihil, quo, at neque accusantium qui vitae amet sint cumque 
-                        voluptate aliquid nam. Consequuntur temporibus, tempora excepturi 
-                        distinctio dignissimos hic! Sint, dolores dignissimos velit inventore 
-                        rerum cupiditate asperiores illo nulla, accusantium et odio placeat ipsum 
-                        delectus cumque libero doloremque culpa doloribus tenetur dolorum quaerat! 
-                        Quas iste tempore quisquam voluptate laboriosam itaque, voluptatibus ipsam.
+        <main class="main-section main-section--booking">
+            <section class="main-section__container main-section__container--left">
+                <h2 class="main-section__title">Sök Resultat</h2>
+                <p class="main-section__subtitle">3 alternativt rum från 20 December 2024 
+                    - till 25 December 2024
+                </p>
+                <article class="main-section__box">
+                    <h3 class="main-section__title main-section__title--rum">Standrad rum</h3>
+                    <p class="main-section__text main-section__text--rum">Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Rerum, itaque.
                     </p>
+                    <img src="assets/photos/04-day.jpg" alt="Hotel rum bild" class="main-section__image main-section__image--rum">
+                    <section class="main-section__description">
+                        <p class="main-section__text main-section__text--small">1 person</p>
+                        <p class="main-section__text main-section__text--small">Bad pool</p>
+                        <p class="main-section__text main-section__text--small">30m2</p>
+                        <p class="main-section__text main-section__text--small">Queen size säng</p>
+                    </section>
+                    <form class="main-section__price-list">
+                        <p class="main-section__text">Pris:</p>
+                        <p class="main-section__text">1500 kr / natt</p>
+                        <input type="number" class="main-section__input">
+                        <a href="#" class="main-section__button-box main-section__button-box--first">
+                            <button class="main-section__button">VISA FLER</button>
+                        </a>
+                    </form>
+                </article>
+                <article class="main-section__box">
+                    <h3 class="main-section__title main-section__title--rum">Dubble rum</h3>
+                    <p class="main-section__text main-section__text--rum">Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Rerum, itaque.
+                    </p>
+                    <img src="assets/photos/04-day.jpg" alt="Hotel rum bild" class="main-section__image main-section__image--rum">
+                    <section class="main-section__description">
+                        <p class="main-section__text main-section__text--small">2 person</p>
+                        <p class="main-section__text main-section__text--small">Bad pool</p>
+                        <p class="main-section__text main-section__text--small">30m2</p>
+                        <p class="main-section__text main-section__text--small">Queen size säng</p>
+                    </section>
+                    <form class="main-section__price-list">
+                        <p class="main-section__text">Pris:</p>
+                        <p class="main-section__text">1500 kr / natt</p>
+                        <input type="number" class="main-section__input">
+                        <a href="#" class="main-section__button-box main-section__button-box--first">
+                            <button class="main-section__button">VISA FLER</button>
+                        </a>
+                    </form>
+                </article>
+                <article class="main-section__box">
+                    <h3 class="main-section__title main-section__title--rum">Queen rum</h3>
+                    <p class="main-section__text main-section__text--rum">Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Rerum, itaque.
+                    </p>
+                    <img src="assets/photos/04-day.jpg" alt="Hotel rum bild" class="main-section__image main-section__image--rum">
+                    <section class="main-section__description">
+                        <p class="main-section__text main-section__text--small">2</p>
+                        <p class="main-section__text main-section__text--small">Bad pool</p>
+                        <p class="main-section__text main-section__text--small">30m2</p>
+                        <p class="main-section__text main-section__text--small">Queen size säng</p>
+                    </section>
+                    <form class="main-section__price-list">
+                        <p class="main-section__text">Pris:</p>
+                        <p class="main-section__text">1500 kr / natt</p>
+                        <input type="number" class="main-section__input">
+                        <a href="#" class="main-section__button-box main-section__button-box--first">
+                            <button class="main-section__button">VISA FLER</button>
+                        </a>
+                    </form>
                 </article>
             </section>
-        </main>
 
-        <main class="main-section">
-            <section class="main-section__gallery">
-                <section class="main-section__image-box">
-                    <img src="assets/photos/07-night.jpg" alt="Galleri image" class="main-section__image main-section__image--gallery">
-                    <img src="assets/photos/02-night.jpg" alt="Galleri image" class="main-section__image main-section__image--gallery">
-                </section>
+            <section class="main-section__container main-section__container--right">
+
             </section>
         </main>
-
-        <aside class="aside-section">
-            <article class="aside-section__container aside-section__container--view">
-                <section class="aside-section__box">
-                    <section class="aside-section__text aside-section__text--resposive">
-                        <h2 class="aside-section__title">Från vår hotell</h2>
-                        <p class="aside-section__subtitle">kan du ser den fina sjö lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quas, tempore doloribus fugit perferendis ad corporis. 
-                            Dolorum dolores harum exercitationem temporibus.
-                        </p>
-                    </section>
-                </section>
-            </article>
-        </aside>
-
-        <main class="main-section">
-            <section class="main-section__container main-section__container--gallery">
-                <section class="main-section__image-box">
-                    <img src="assets/photos/06-day.jpg" alt="Galleri image" class="main-section__image main-section__image--gallery">
-                    <img src="assets/photos/04-night.jpg" alt="Galleri image" class="main-section__image main-section__image--gallery">
-                </section>
-            </section>
-        </main>
-
-        <aside class="aside-section">
-            <article class="aside-section__container aside-section__container--normal">
-                <section class="aside-section__box">
-                    <section class="aside-section__text aside-section__text--resposive">
-                        <h2 class="aside-section__title">Vår hotel är miljövänligt</h2>
-                        <p class="aside-section__subtitle">Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Reiciendis ipsum voluptatum ipsam, ipsa eius facilis 
-                            recusandae aperiam dolorum quod eaque corrupti consequatur minus facere 
-                            exercitationem doloremque quibusdam, quasi provident! Dicta quos cupiditate 
-                            adipisci saepe asperiores earum veritatis facere ipsa atque aperiam nemo 
-                            rerum eveniet cum ex, alias rem? Consequuntur, assumenda?
-                        </p>
-                    </section>
-                </section>
-            </article>
-        </aside>
 
         <footer class="footer-section">
             <ul class="footer-section__navigation">

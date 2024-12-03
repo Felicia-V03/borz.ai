@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /*-----root-----*/
 :root {
     /*---root for text font---*/
@@ -11,6 +12,7 @@
     --color-light-beige: #FFFDF6;
     --color-white: #FFFFFF;
     --color-light-white: #FAFAFA;
+    --color-mid-white: #f7f7f7;
     --color-grey: #747474;
     --color-dark-grey: #5F6060;
     --color-black: #222222;
@@ -22,22 +24,21 @@
     padding: 0;
 }
 
-body {
-    background-color: #f1f1f1;
-    
+body {    
     display: grid;
     place-items: center;
 }
 
 .wrapper {
-    min-width: 576pxpx;
+    min-width: 576px;
     max-width: 1000px;
     height: auto;
     background-color: var(--color-white);
-    box-shadow: 0 0 .4rem var(--color-black);
+    box-shadow: 0 0 5px var(--color-grey);
 }
 
-/*-----HEAD SECTION-----*/
+/*-----HEADER-----*/
+/*HEAD-SECTION*/
 .head-section {
     background-image: url('https://i.postimg.cc/cLD4SFyz/03-day.jpg');
     background-size: cover;
@@ -61,7 +62,7 @@ body {
     width: 100%;
 }
 
-.head-section__logo {
+.head-section__container {
     width: 25%;
     height: 10%;
     display: flex;
