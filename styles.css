@@ -205,13 +205,13 @@ body {
     display: flex;
 }
 
-.main-section__box--left {
-    width: 50%;
-}
-
 .main-section__image {
     aspect-ratio: 5 / 4;
     width: 100%;
+}
+
+.main-section__box--left {
+    width: 50%;
 }
 
 .main-section__box--right {
@@ -224,21 +224,6 @@ body {
     gap: 2rem;
 }
 
-.main-section__title {
-    font-family: var(--text-font-noto);
-    color: var(--color-black);
-    font-size: 2rem;
-    align-self: flex-start;
-    margin-top: 1rem;
-}
-
-.main-section__subtitle {
-    font-family: var(--text-font-open);
-    color: var(--color-dark-grey);
-    font-size: 1rem;
-    margin-left: 2rem;
-}
-
 .main-section__box--center {
     display: flex;
     flex-direction: column;
@@ -248,12 +233,38 @@ body {
     padding: 0 5rem;
 }
 
+.main-section__title {
+    font-family: var(--text-font-noto);
+    color: var(--color-black);
+    font-size: 2rem;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.main-section__title--booking {
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+}
+
+.main-section__subtitle {
+    font-family: var(--text-font-open);
+    color: var(--color-dark-grey);
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+
+.main-section__subtitle--booking {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
 /*-----GALLERY SECTION-----*/
 .main-section__container--gallery .main-section__subtitle {
     margin-top: 2rem;
 }
 
-.main-section__image-box {
+.main-section__box--image {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -266,6 +277,9 @@ body {
 .main-section__image--gallery {
     width: 48%;
 }
+
+/*-----BOOKING PAGE-----*/
+
 
 /*BUTTON IN GALLERY (TO MOVE IT TO CENTER)*/
 .main-section__button-box--second {
@@ -428,7 +442,44 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
 }
 
 @media (max-width: 760px) {
-    
+    .head-section__nav-item {
+        display: none;
+    }
+
+    .head-section__button--hamburger {
+        display: block;
+    }
+
+    /*-----MAIN SECTION-----*/
+    .main-section__box--right {
+        padding: 1.5rem;
+        gap: 1.2rem;
+    }
+
+    .main-section__title {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+    .main-section__subtitle {
+        font-size: .7rem;
+    }
+
+    /*-----GALLEY SECTION-----*/
+    .main-section__container--gallery .main-section__subtitle {
+        margin-top: 1rem;
+    }
+
+    .main-section__image--gallery {
+        width: 45;
+    }
+
+
+    /*-----BUTTON SECTION-----*/
+    .main-section__button {
+        width: 7rem;
+        font-size: .7rem;
+    }
 }
 
 @media (min-width: 375px) and (max-width: 576px) {
