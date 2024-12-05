@@ -183,6 +183,7 @@ body {
     grid-area: button-bok;
     padding: 3rem;
     background-color: var(--color-dark-brown);
+    text-decoration: none;
 }
 
 .head-section__button--sok {
@@ -419,7 +420,7 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     background-color: var(--color-light-brown);
     color: var(--color-white);
     position: absolute;
-    bottom: -5rem;
+    bottom: -6rem;
     width: 100%;
     padding: 2rem;
 
@@ -506,7 +507,7 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     font-weight: 500;
 }
 
-@media (max-width: 760px) {
+@media (min-width: 576px) and (max-width: 760px) {
     .head-section__nav-item {
         display: none;
     }
@@ -568,6 +569,10 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     }
 
     /*-----ASIDE SECTION-----*/
+    .aside-section {
+        margin-top: 3rem;
+    }
+
     .aside-section__container--normal {
         height: 15rem;
     }
@@ -582,7 +587,7 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
 
     .aside-section__text {
         font-size: 1rem;
-        bottom: -4.5rem;
+        bottom: -5rem;
         gap: 1rem;
     }
 
@@ -615,12 +620,24 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
         padding: 2rem 2rem 20rem 2rem;
     }
 
+    .head-section--sematic {
+        padding: 2rem;
+    }
+
     .head-section__wrapper {
         padding-bottom: 10rem;
     }
 
     .head-section__container {
         width: 40%;
+    }
+
+    .head-section__nav-item {
+        display: none;
+    }
+
+    .head-section__button--hamburger {
+        display: block;
     }
 
     .head-section__form {
@@ -635,8 +652,8 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
         "input-third input-fourth" 
         "button-bok button-bok";
 
-        width: 83%;
         bottom: -5rem;
+        margin: 0 2rem 0 0;
     }
 
     .head-section__input {
@@ -667,6 +684,11 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
         font-size: 1.25rem;
     }
 
+    /*INFO PAGE*/
+    .head-section--sematic {
+        margin-top: 0;
+    }
+
     /*-----MAIN SECTION-----*/
     .main-section__container--first {
         display: flex;
@@ -690,7 +712,27 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
         font-size: 1rem;
     }
 
+    /*INFO PAGE*/
+    .main-section--welcome {
+        margin-top: 6rem;
+    }
+
+    .main-section__box--center {
+        padding: 0;        
+    }
+
     /*SELECT PAGE*/
+    .main-section {
+        padding: 0 2rem 0 2rem;
+    }
+    .main-section__subtitle--booking {
+        margin: 0 0 2rem 0;
+    }
+    .main-section__container--select {
+        display: flex;
+        flex-direction: column;
+    }
+
     .main-section__box--left-booking {
         width: 100%;
     }
@@ -700,12 +742,25 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
         margin: 0;
     }
 
+    .main-section__title--rum {
+        font-size: 1.5rem;
+    }
+
     .main-section__text{
-        font-size: 1rem;
+        font-size: .7rem;
     }
 
     .main-section__box--inside {
         margin-top: .5rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-section__form {
+        gap: .5rem;
+        justify-content: center;
+        width: 100%;
     }
 
     /*-----BUTTON SECTION-----*/
@@ -723,28 +778,40 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
         width: 100%;
     }
 
+    .main-section__button-box--third {
+        align-self: center;
+    }
+
     /*-----ASIDE SECTION-----*/
+    .aside-section {
+        margin-top: 2rem;
+    }
+
     .aside-section__container--normal {
-        height: 25rem;
-        margin-top: 5rem;
+        height: 20rem;
+        margin-top: 3rem;
     }
 
     .aside-section__container--reverse {
-        height: 25rem;
-        margin-top: 5rem;
+        height: 20rem;
+        margin-top: 3rem;
     }
 
     .aside-section__container--view {
-        height: 25rem;
-        margin-top: 5rem;
+        height: 20rem;
+        margin-top: 3rem;
     }
 
     .aside-section__box {
         width: 100%;
     }
 
-    .head-section__text {
-        bottom: 5.5rem;
+    .aside-section__text {
+        bottom: 1rem;
+    }
+
+    .aside-section__title {
+        font-size: 1.5rem;
     }
 
     .aside-section__subtitle {
@@ -752,18 +819,18 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     }
 
     .aside-section__profile {
-        font-size: .8rem;
+        font-size: .6rem;
     }
 
     .aside-section__image {
-        width: 5rem;
+        width: 3rem;
     }
     
     /*-----FOOTER SECTION-----*/
     .footer-section__navigation {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: .5rem;
     }
 
     .footer-section__image {
@@ -771,10 +838,11 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     }
 
     .footer-section__title {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .footer-section {
-        font-size: 1rem;
+        font-size: .7rem;
+        margin-top: 6rem;
     }
 }
