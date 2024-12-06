@@ -412,7 +412,7 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     font-family: var(--text-font-noto);
     font-size: 1.5rem;
     background-color: var(--color-light-brown);
-    color: var(--color-white);
+    color: var(--color-dark-brown);
     position: absolute;
     bottom: -6rem;
     width: 100%;
