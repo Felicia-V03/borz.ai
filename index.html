@@ -8,49 +8,67 @@
 </head>
 <body>
     <div class="wrapper">
+        <!--HEADER HEAD-SECTION-->
         <header class="head-section">
+            <!--WRAPP HEADER-->
             <section class="head-section__wrapper head-section__wrapper--long">
+                <!--LOGO-->
                 <a href="index.html" class="head-section__container">
                     <img src="assets/logo/bonz.ai-logo-white-landscape.png" alt="Borz.ai logo" class="head-section__image">
                 </a>
                 
+                <!--MENU AND HAMBURGER NEMU-->
                 <nav class="head-section__navigation">
                     <ul class="head-section__nav-list">
-                        <a href="third.html" class="head-section__list-item">
-                            <p class="head-section__text">Boka rum</p>
-                        </a>
-                        <a href="sematic.html" class="head-section__list-item">
-                            <p class="head-section__text">Om Borz.ai</p>
-                        </a>
-                        <a class="head-section__list-item">
-                            <p class="head-section__text">Aktivetet</p>
-                        </a>
-                        <a class="head-section__list-item">
-                            <p class="head-section__text">Galleri</p>
-                        </a>
-                        <img class="head-section__button--hamburger" src="assets/logo/icons8-menu.svg" alt="Hamburger button for menu for mobile-form">
-                      </ul>
+                        <!--ITEM IN MENU-->
+                        <li class="head-section__list-item">
+                            <a href="third.html" class="head-section__list-link">
+                                <p class="head-section__text">Boka rum</p>
+                            </a>
+                        </li>
+                        <li class="head-section__list-item">
+                            <a href="sematic.html" class="head-section__list-link">
+                                <p class="head-section__text">Om Borz.ai</p>
+                            </a>
+                        </li>
+                        <li class="head-section__list-item">
+                            <a class="head-section__list-link">
+                                <p class="head-section__text">Aktivetet</p>
+                            </a>
+                        </li>
+                        <li class="head-section__list-item">
+                            <a class="head-section__list-link">
+                                <p class="head-section__text">Galleri</p>
+                            </a>
+                        </li>
+                        <!--HAMBURGER BUTTON FOR MENU - SHOW IN MOBLIE FORM-->
+                        <li class="head-section__list-item">
+                            <img class="head-section__button--hamburger" src="assets/logo/icons8-menu.svg" alt="Hamburger button for menu for mobile-form">
+                        </li>
+                    </ul>
                 </nav>
             </section>
 
+            <!--SEARCH FORM FOR BOOK THE HOTELL-->
             <form class="head-section__form">
                 <label for="head-section__input--first" class="head-section__label head-section__label--first">Checka in:</label>
-                <input type="date" class="head-section__input head-section__input--first">
+                <input type="date" id="head-section__input--first" class="head-section__input head-section__input--first">
 
                 <label for="head-section__input--second" class="head-section__label head-section__label--second">Checka ut:</label>
-                <input type="date" class="head-section__input head-section__input--second">
+                <input type="date" id="head-section__input--second" class="head-section__input head-section__input--second">
 
                 <label for="head-section__input--third" class="head-section__label head-section__label--third">Adults:</label>
-                <input type="number" class="head-section__input head-section__input--third" value="1">
+                <input type="number" id="head-section__input--third" class="head-section__input head-section__input--third" value="1">
 
                 <label for="head-section__input--fourth" class="head-section__label head-section__label--fourth">Children:</label>
-                <input type="number" class="head-section__input head-section__input--fourth" value="0">
+                <input type="number" id="head-section__input--fourth" class="head-section__input head-section__input--fourth" value="0">
 
                 <a href="third.html" class="head-section__button--box">
-                    <button class="head-section__button head-section__button--sok">SÖK</button>
+                    <p>SÖK</p>
                 </a>
             </form>
         </header>
+
 
         <main class="main-section">
             <section class="main-section__container main-section__container--first">
@@ -58,7 +76,7 @@
                     <img class="main-section__image main-section__image--first" src="assets/photos/09-day.jpg" alt="View from bed in the room">
                 </figure>
                 <article class="main-section__box main-section__box--right">
-                    <h2 class="main-section__title">Välkommen till boiz.ai</h2>
+                    <h1 class="main-section__title">Välkommen till boiz.ai</h1>
                     <p class="main-section__subtitle">Lorem ipsum dolor sit amet, 
                         consectetur adipisicing elit. Ipsum laborum, maxime quod 
                         similique ratione quos, praesentium facere qui ea deleniti 
@@ -66,8 +84,8 @@
                         at nobis saepe, minima quae esse dignissimos sequi repellendus 
                         iure cupiditate sit!
                     </p>
-                    <a href="sematic.html" class="main-section__button-box main-section__button-box--first">
-                        <button class="main-section__button">VISA FLER</button>
+                    <a href="sematic.html" class="main-section__button-box">
+                        <p class="main-section__button">VISA FLER</p>
                     </a>
                 </article>
             </section>
@@ -87,7 +105,7 @@
             </article>
         </aside>
 
-        <main class="main-section main-section--gallery">
+        <section class="main-section main-section--gallery">
             <section class="main-section__container main-section__container--gallery">
                 <h2 class="main-section__title">Våran Galleri</h2>
                 <p class="main-section__subtitle">Lorem ipsum dolor sit amet consectetur 
@@ -101,10 +119,10 @@
                     <img src="assets/photos/02-night.jpg" alt="Galleri image" class="main-section__image main-section__image--gallery">
                 </section>
                 <a class="main-section__button-box main-section__button-box--second">
-                    <button class="main-section__button">VISA FLER</button>
+                    <p class="main-section__button">VISA FLER</p>
                 </a>
             </section>
-        </main>
+        </section>
 
         <aside class="aside-section">
             <article class="aside-section__container aside-section__container--normal">

@@ -24,11 +24,13 @@
     padding: 0;
 }
 
+/*BODY*/
 body {    
     display: grid;
     place-items: center;
 }
 
+/*WRAPPER*/
 .wrapper {
     max-width: 1000px;
     height: auto;
@@ -36,7 +38,10 @@ body {
     box-shadow: 0 0 5px var(--color-grey);
 }
 
+/*----------------*/
 /*-----HEADER-----*/
+/*----------------*/
+
 /*HEAD-SECTION*/
 .head-section {
     background-image: url('https://i.postimg.cc/cLD4SFyz/03-day.jpg');
@@ -48,7 +53,7 @@ body {
     position: relative;
 }
     
-/*WRAPP HEADER*/
+/*WRAPP HEADER (WRAPP LOGO AND MENU IN THE SAME SECTION)*/
 .head-section__wrapper {
     padding-bottom: 20rem;
     display: flex;
@@ -56,11 +61,7 @@ body {
     justify-content: space-between;
 }
 
-/*BORZ.AI LOGO*/
-.head-section__image {
-    width: 100%;
-}
-
+/*IMAGE CONTAINER*/
 .head-section__container {
     width: 25%;
     height: 10%;
@@ -70,19 +71,25 @@ body {
     justify-content: center;
 }
 
-/*MENU IN TOP RIGHT SIDE*/
+/*BORZ.AI LOGO*/
+.head-section__image {
+    width: 100%;
+}
+
+/*MENU NAVIGATION*/
+/*MENU WITH TEXT IN TOP RIGHT SIDE*/
 .head-section__nav-list {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap: .5rem;
 }
-
 .head-section__list-item {
+    list-style: none;
+}
+.head-section__list-link {
     text-decoration: none;
 }
-
-/*TEXT IN MENU*/
 .head-section__text {
     padding: 1rem;
     color: var(--color-light-white);
@@ -91,18 +98,15 @@ body {
     font-weight: 500;
     font-family: var(--text-font-open);
 }
-
-/*HOVER FOR TEXT IN MENU*/
 .head-section__text:hover{
     background-color: #0101014c;
 }
-
 /*HAMBURGER BUTTON FOR MENU - SHOW IN MOBLIE FORM*/
 .head-section__button--hamburger {
     display: none;
 }
 
-/*-----SEARCH NAVIGATION-----*/
+/*SEARCH FORM WITH LABEL AND INPUT FOR BOOK THE HOTELL*/
 .head-section__form {
     font-family: var(--text-font-open);
 
@@ -119,14 +123,12 @@ body {
     "label-first label-first label-second label-second label-third label-fourth button-bok"
     "input-first input-first input-second input-second input-third input-fourth button-bok";
 }
-
 .head-section__input {
     color: var(--color-grey);
     border-radius: .5rem;
     border: none;
     padding: 0 1rem;
 }
-
 .head-section__label {
     color: var(--color-white);
     font-size: 1rem;
@@ -138,86 +140,81 @@ body {
     grid-area: label-first;
     padding: 1.5rem 1rem 0;
 }
-
 .head-section__input--first {
     grid-area: input-first;
     margin: 0 1rem 1rem 1rem;
 }
-
 .head-section__label--second {
     grid-area: label-second;
     padding: 1.5rem 1rem 0;
 }
-
 .head-section__input--second {
     grid-area: input-second;
     margin: 0 1rem 1rem 1rem;
 }
-
 .head-section__label--third {
     grid-area: label-third;
     width: 11.5%;
     padding: 1.5rem 1rem 0;
 }
-
 .head-section__input--third {
     grid-area: input-third;
     width: 70%;
     margin: 0 1rem 1rem 1rem;
 }
-
 .head-section__label--fourth {
     grid-area: label-fourth;
     width: 11.5%;
     padding: 1.5rem 1rem 0;
 }
-
 .head-section__input--fourth {
     grid-area: input-fourth;
     width: 70%;
     margin: 0 1rem 1rem 1rem;
 }
-
 .head-section__button--box {
     border-radius: 0 .5rem .5rem 0;
     grid-area: button-bok;
     padding: 3rem;
     background-color: var(--color-dark-brown);
     text-decoration: none;
-}
-
-.head-section__button--sok {
     color: var(--color-white);
-    font-size: 1.125rem;
     font-weight: 700;
-    border: none;
-    background-color: var(--color-dark-brown);
 }
 
-/*-----MAIN SECTION-----*/
+/*---------------------------*/
+/*--------MAIN SECTION-------*/
+/*---------------------------*/
+
+/*MAIN SECTION*/
 .main-section {
     margin-top: 6rem;
     margin-bottom: 2rem;
     padding: 0 3rem;
 }
 
+/*FIRST CONTAINER FOR MAIN SECTION IN INDEX PAGE*/
 .main-section__container--first {
     display: flex;
 }
 
+/*SELECT SECTION FOR MAIN SECTION IN THIRD PAGE*/
 .main-section__container--select {
     display: flex;
 }
 
+/*ALL IMAGE IN MAIN SECTION*/
 .main-section__image {
     aspect-ratio: 5 / 4;
     width: 100%;
 }
 
+/*LEFT BOX IN MAIN CONTAINER*/
 .main-section__box--left {
     width: 50%;
 }
 
+/*RIGHT BOX IN MAIN CONTAINER*/
 .main-section__box--right {
     width: 50%;
     padding: 2rem;
@@ -228,6 +225,7 @@ body {
     gap: 2rem;
 }
 
+/*CENTER BOX IN MAIN CONTAINER*/
 .main-section__box--center {
     display: flex;
     flex-direction: column;
@@ -237,6 +235,7 @@ body {
     padding: 0 5rem;
 }
 
+/*ALL TITLE, SUBTITLE IN MAIN SECTION*/
 .main-section__title {
     font-family: var(--text-font-noto);
     color: var(--color-black);
@@ -244,7 +243,6 @@ body {
     align-self: flex-start;
     margin-top: 1rem;
 }
-
 .main-section__subtitle {
     font-family: var(--text-font-open);
     color: var(--color-dark-grey);
@@ -253,10 +251,12 @@ body {
 }
 
 /*-----GALLERY SECTION-----*/
+/*SUBTITLE OR SMALL TEXT IN MAIN SECTION GALLERY*/
 .main-section__container--gallery .main-section__subtitle {
     margin-top: 2rem;
 }
 
+/*BOX AND IMAGE IN MAIN SECTION GALLERY*/
 .main-section__box--image {
     display: flex;
     flex-direction: row;
@@ -266,89 +266,77 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-
 .main-section__image--gallery {
     width: 48%;
 }
 
-/*-----MAIN SECTION IN select PAGE-----*/
-.main-section__title--booking {
+/*-----MAIN SECTION IN SELECT PAGE-----*/
+/*CENTER TITLE AND SUBTITLE IN MAIN SECTION */
+.main-section__title--center {
     text-align: center;
     margin-top: 7rem;
     margin-bottom: 1rem;
 }
-
-.main-section__subtitle--booking {
+.main-section__subtitle--center {
     text-align: center;
     margin-bottom: 4rem;
 }
 
-.main-section__title--rum {
-    margin-top: 0;
-    font-size: 1.5rem;
-    margin-bottom: .5rem;
-}
-
-.main-section__text--rum {
-    margin-bottom: .5rem;
-    font-size: 1rem;
-}
-
-.main-section__text--sum {
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-.main-section__text--price {
-    margin-left: 1.5rem;
-}
-
-.main-section__box--left-booking {
+/*BOX AND IMAGE IN MAIN SECTION BOX LEFT ROOM*/
+.main-section__box--left-room {
     width: 45%;
-    margin-right: 2rem;
 }
-
-.main-section__image--rum {
+.main-section__image--room {
     border-radius: 5px;
 }
 
-.main-section__box--right--booking {
+/*ALL IN MAIN SECTION BOX RIGHT ROOM (BOX + TEXT + FORM)*/
+.main-section__box--right-room {
     font-family: var(--text-font-open);
     margin-left: 1rem;
     width: 55%;
     margin-bottom: 3rem;
     font-size: .8rem;
 }
-
-.main-section__box--inside {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .main-section__list {
     padding-left: 1rem;
     gap: .5rem;
     width: 100%;
     line-height: 1.7rem;
 }
-
+.main-section__title--room {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+.main-section__text--room {
+    margin-bottom: .5rem;
+    font-size: 1rem;
+}
+/*PRICE FORM IN MAIN SECTION BOX RIGHT ROOM*/
 .main-section__form {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
     width: 30%;
 }
-
-/*BUTTON IN GALLERY (TO MOVE IT TO CENTER)*/
-.main-section__button-box--second {
+.main-section__text--sum {
+    font-weight: 700;
+    font-size: 1rem;
+}
+.main-section__text--price {
+    margin-left: 1.5rem;
+}
+.main-section__box--inside {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+/*ALL BUTTON IN MAIN SECTION*/
 .main-section__button {
     width: 10rem;
-    padding: 1rem;
+    padding: .5rem 1rem;
     border: none;
     border-radius: 1rem;
     background-color: var(--color-mid-brown);
@@ -356,13 +344,20 @@ body {
     text-decoration: none;
     font-size: 1rem;
 }
-
-.main-section__button--choose {
-    width: 6rem;
-    font-size: .7rem;
-    padding: .7rem;
-    margin: 1rem 0 3rem 1rem;
+.main-section__button-box {
+    font-family: var(--text-font-open);
+    text-decoration: none;
+    text-align: center;
 }
+/*BUTTON BOX FOR MOVE IT TO CENTER*/
+.main-section__button-box--second {
+    display: flex;
+    justify-content: center;
+}
+
+/*-----------------------*/
+/*-----ASIDE SECTION-----*/
+/*-----------------------*/
 
 /*-----ASIDE SECTION-----*/
 .aside-section {
@@ -383,7 +378,6 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     background-size: 100%;
     padding: 3rem;
 }
-
 .aside-section__container--reverse {
     width: 100%;
     height: 20rem;
@@ -395,7 +389,6 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     background-size: 100%;
     padding: 3rem;
 }
-
 .aside-section__container--view{
     width: 100%;
     height: 20rem;
@@ -408,12 +401,12 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     padding: 3rem;
 }
 
+/*BOX AND TEXT IN ASIDE CONTAINER*/
 .aside-section__box {
     width: 46%;
     padding-right: 8%;
     position: relative;
 }
-
 .aside-section__text {
     font-family: var(--text-font-noto);
     font-size: 1.5rem;
@@ -432,18 +425,17 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     align-items: flex-start;
     gap: 2.5rem;
 }
-
 .aside-section__subtitle {
     padding-left: 2rem;
     font-size: 1rem;
     font-family: var(--text-font-open);
 }
-
+/*FIX TEXT*/
 .aside-section__text--responsive {
     max-width: 100%;
     height: auto;
 }
-
+/*BOX AND IMAGE FOR PROFILE*/
 .aside-section__profile {
     display: flex;
     flex-direction: row;
@@ -453,7 +445,6 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     font-family: var(--text-font-open);
     font-size: .7rem;
 }
-
 .aside-section__image {
     background-color: var(--color-white);
     aspect-ratio: 1;
@@ -464,7 +455,11 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     margin-right: 1rem;
 }
 
+/*------------------------*/
 /*-----FOOTER SECTION-----*/
+/*------------------------*/
+
+/*FOOTER SECTION*/
 .footer-section {
     background-color: var(--color-mid-brown);
     font-family: var(--text-font-open);
@@ -476,6 +471,7 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     align-items: center;
 }
 
+/*NAVIGATION, ITEM, TEXT AND IMAGE FOR FOOTER SECTION*/
 .footer-section__navigation {
     list-style-type: none;
     margin-bottom: 3rem;
@@ -483,7 +479,6 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
 }
-
 .footer-section__nav-item {
     padding: 1rem;
     color: var(--color-white);
@@ -493,79 +488,79 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     flex-direction: column;
     gap: 1rem;
 }
-
 .footer-section__title {
     font-size: 1.5rem;
 }
-
 .footer-section__image {
     width: 90%;
 }
-
 .footer-section__info {
     color: var(--color-white);
     font-weight: 500;
 }
 
-@media (min-width: 576px) and (max-width: 760px) {   
-    .head-section__list-item {
+/*----------------------*/
+/*-----MEDIA SCREEN-----*/
+/*----------------------*/
+@media screen and (max-width: 760px) {  
+    /*-----HEAD SECTION-----*/
+    /*TEXT AND BUTTON IN HEAD SECTION*/ 
+    .head-section__list-link {
         display: none;
     }
-
+    /*HAMBURGER BUTTON SHOW UPP*/
     .head-section__button--hamburger {
         display: block;
     }
-
     .head-section__text {
         font-size: .7rem;
     }
 
     /*-----MAIN SECTION-----*/
+    /*RIGHT BOX IN MAIN CONTAINER*/
     .main-section__box--right {
         padding: 1.5rem;
         gap: 1.2rem;
     }
 
+    /*ALL TITLE AND SUBTITLE IN MAIN SECTION*/
     .main-section__title {
         font-size: 1.5rem;
         margin-top: 0;
     }
-
     .main-section__subtitle {
         font-size: .8rem;
     }
 
     /*-----GALLEY SECTION-----*/
+    /*SUBTITLE IN MAIN SECTION GALLERY*/
     .main-section__container--gallery .main-section__subtitle {
         margin-top: 1rem;
     }
 
+    /*IMAGE BOX IN MAIN SECTION GALLERY*/
     .main-section__box--image {
         gap: 1rem;
     }
 
     /*-----SELECT PAGE-----*/
-    .main-section__box--right--booking {
+    /*ALL IN MAIN SECTION BOX RIGHT ROOM (BOX + TEXT + FORM)*/
+    .main-section__box--right-room {
         font-size: .8rem;
     }
-
+    .main-section__text--room {
+        font-size: .8rem;
+    }    
     .main-section__form {
         width: 40%;
         gap: .6rem;
-    }
-
-    .main-section__text--rum {
-        font-size: .8rem;
     }
 
     /*-----BUTTON SECTION-----*/
     .main-section__button {
         width: 7rem;
         font-size: .7rem;
-    }
-
-    .main-section__button--choose {
-        margin: 1rem 0 1rem 2rem;
+        margin-bottom: 2rem;
     }
 
     /*-----ASIDE SECTION-----*/
@@ -573,73 +568,66 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
         margin-top: 3rem;
     }
 
+    /*ASIDE CONTAINER*/
     .aside-section__container--normal {
         height: 15rem;
     }
-
     .aside-section__container--reverse {
         height: 15rem;
     }
-
     .aside-section__container--view {
         height: 15rem;
     }
 
+    /*BOX AND TEXT IN ASIDE CONTAINER*/
     .aside-section__text {
         font-size: 1rem;
         bottom: -5rem;
         gap: 1rem;
     }
-
     .aside-section__subtitle {
         font-size: .8rem;
     }
-
+    /*BOX AND IMAGE FOR PROFILE*/
     .aside-section__profile {
         font-size: .6rem;
     }
-
     .aside-section__image {
         width: 3rem;
     }
 
     /*-----FOOTER SECTION-----*/
-    .footer-section__title {
-        font-size: 1rem;
-    }
-
     .footer-section {
         font-size: .7rem;
         margin-top: 3rem;
     }
+    .footer-section__title {
+        font-size: 1rem;
+    }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     /*-----HEAD SECTION-----*/
     .head-section {
         padding: 2rem 2rem 20rem 2rem;
     }
 
+    /*HEAD SECTION IN SMEATIC PAGE*/
     .head-section--sematic {
         padding: 2rem;
     }
 
+    /*HEAD SECTION WRAPPER*/
     .head-section__wrapper {
         padding-bottom: 10rem;
     }
 
+    /*IMAGE CONTAINER*/
     .head-section__container {
         width: 40%;
     }
 
-    .head-section__list-item {
-        display: none;
-    }
-
-    .head-section__button--hamburger {
-        display: block;
-    }
-
+    /*SEARCH FORM WITH LABEL AND INPUT FOR BOOK THE HOTELL*/
     .head-section__form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -656,38 +644,28 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
         margin: 0 2rem 0 0;
         width: 88%;
     }
-
     .head-section__input {
         padding: 1rem;
         margin: 0 1rem 1rem 1rem;
         font-size: .8rem;
     }
-
     .head-section__label {
         padding: .5rem;
         font-size: 1rem;
     }
-
     .head-section__label--first {
         display: flex;
         align-items: flex-end;
     }
-
     .head-section__input--fourth, .head-section__input--third {
         width: 80%;
     }
-
     .head-section__button--box {
         margin-top: 1rem;
         padding: 2rem;
         display: flex;
         justify-content: center;
         font-size: 1.25rem;
-    }
-
-    /*INFO PAGE*/
-    .head-section--sematic {
-        margin-top: 0;
     }
 
     /*-----MAIN SECTION-----*/
@@ -726,38 +704,42 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     .main-section {
         padding: 0 2rem 0 2rem;
     }
+
+    /*SUBTITILE IN MAIN SECTION*/
     .main-section__subtitle--booking {
         margin: 0 0 2rem 0;
     }
+
+    /*SELECT SECTION IN MAIN SECTION IN THIRD PAGE*/
     .main-section__container--select {
         display: flex;
         flex-direction: column;
     }
 
-    .main-section__box--left-booking {
+    /*BOX IN MAIN SECTION BOX LEFT ROOM*/
+    .main-section__box--left-room {
         width: 100%;
     }
 
-    .main-section__box--right--booking {
+    /*ALL IN MAIN SECTION BOX RIGHT ROOM (BOX + TEXT + FORM)*/
+    .main-section__box--right-room {
         width: 100%;
         margin: 0;
     }
-
-    .main-section__title--rum {
-        font-size: 1.5rem;
-    }
-
-    .main-section__text{
-        font-size: .7rem;
-    }
-
+    /*INSIDE BOX IN BOX RIGHT ROOM*/
     .main-section__box--inside {
         margin-top: .5rem;
         gap: 1rem;
         display: flex;
         flex-direction: column;
     }
-
+    .main-section__title--room {
+        font-size: 1.5rem;
+    }
+    .main-section__text{
+        font-size: .7rem;
+    }
+    /*PRICE FORM IN MAIN SECTION BOX RIGHT ROOM*/
     .main-section__form {
         gap: .5rem;
         justify-content: center;
@@ -769,9 +751,11 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
         width: 10rem;
         font-size: 1rem;
     }
-
     .head-section__button--box {
         border-radius: 0 .0 .5rem .5rem;
+    }
+    .main-section__button-box--second {
+        align-self: center;
     }
 
     /*GALLERY SECTION*/
@@ -779,80 +763,74 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
         width: 100%;
     }
 
-    .main-section__button-box--third {
-        align-self: center;
-    }
-
     /*-----ASIDE SECTION-----*/
     .aside-section {
         margin-top: 2rem;
     }
 
+    /*CONTAINER IN ASIDE SECTION*/
     .aside-section__container--normal {
         height: 20rem;
         margin-top: 3rem;
     }
-
     .aside-section__container--reverse {
         height: 20rem;
         margin-top: 3rem;
     }
-
     .aside-section__container--view {
         height: 20rem;
         margin-top: 3rem;
     }
 
+    /*BOX AND TEXT IN ASIDE CONTAINER*/
     .aside-section__box {
         width: 100%;
     }
-
     .aside-section__text {
         bottom: -6rem;
     }
-
     .aside-section__title {
         font-size: 1.5rem;
     }
-
     .aside-section__subtitle {
         font-size: .7rem;
     }
-
+    /*BOX AND IMAGE FOR PROFILE*/
     .aside-section__profile {
         font-size: .6rem;
     }
-
     .aside-section__image {
         width: 3rem;
     }
     
     /*-----FOOTER SECTION-----*/
+    /*NAVIGATION, ITEM, TEXT AND IMAGE FOR FOOTER SECTION*/
+    .footer-section {
+        font-size: .7rem;
+        margin-top: 6rem;
+    }
     .footer-section__navigation {
         display: flex;
         flex-direction: column;
         gap: .5rem;
     }
-
     .footer-section__image {
         width: 50%;
     }
-
     .footer-section__title {
         font-size: 1rem;
     }
-
-    .footer-section {
-        font-size: .7rem;
-        margin-top: 6rem;
-    }
 }
 
-@media (max-width: 450px) {
+/*SOME SECTION NEED TO FIX*/
+@media screen and (max-width: 450px) {
+    /*HEAD SECTION*/
     .head-section__form {
         margin: 0 2rem 0 0;
         width: auto;
     }
+
+    /*ASIDE SECTION*/
     .aside-section__text {
         bottom: 1.5rem;
     }
