@@ -502,6 +502,7 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
 /*----------------------*/
 /*-----MEDIA SCREEN-----*/
 /*----------------------*/
+
 @media screen and (max-width: 760px) {  
     /*-----HEAD SECTION-----*/
     /*TEXT AND BUTTON IN HEAD SECTION*/ 
@@ -606,6 +607,7 @@ TO USE DIFFIRECE BACKGROUND AND REVERSE*/
     }
 }
 
+/*MOBILE FORM*/
 @media screen and (max-width: 576px) {
     /*-----HEAD SECTION-----*/
     .head-section {
