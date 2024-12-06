@@ -201,6 +201,7 @@ body {
 /*SELECT SECTION FOR MAIN SECTION IN THIRD PAGE*/
 .main-section__container--select {
     display: flex;
+    margin-bottom: 2rem;
 }
 
 /*ALL IMAGE IN MAIN SECTION*/
